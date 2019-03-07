@@ -1,0 +1,18 @@
+#container {
+    width: 500px;
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+div {
+    background-color: rgb(231, 175, 31);
+    width: 70%;
+    text-align: center;
+}
+div.first {
+    background-color: aqua;
+    height: 30px;
+    transition: height .5s ;
+}
+div.first:hover {
+    height: 80px;
+}
