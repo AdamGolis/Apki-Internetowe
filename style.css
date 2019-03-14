@@ -1,18 +1,23 @@
 #container {
-    width: 500px;
+    display:flex;
+    width: 400px;
     margin: 0 auto;
     background-color: blueviolet;
 }
-div {
+#container > div {
     background-color: rgb(231, 175, 31);
-    width: 70%;
-    text-align: center;
+    height: 100px;
+    width: 100px;
+    transition: all .2s linear;
+
 }
-div.first {
+#container > div:nth-child(2){
     background-color: aqua;
-    height: 30px;
-    transition: height .5s ;
-}
-div.first:hover {
     height: 80px;
+    align-items: center;
+}
+#container > div:hover {
+    background-color: rgb(55, 211, 55);
+    transition-delay: 0.3s;
+    flex-grow: 0.5;
 }
