@@ -7,21 +7,26 @@ padding: 0;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
-min-width: 600px;
-min-height: 400px;
+min-width: 240px;
+min-height: 330px;
 background-color: black;
 margin: 0 auto;
-width: 60%;
-height: 40%;
+width: 30%;
+height: 45%;
 grid-gap: 2px;
 border: 3px dotted blue;
 }
 #container div{
     display: flex;
-    background-color: darkgrey;
+    background-color: rgb(51, 120, 141);
     justify-content: center;
     align-items: center;
-    
+    transition: all .2s linear;
+}
+#container > div:hover {
+    background-color: rgb(113, 210, 255);
+    transition-delay: 0s;
+    flex-grow: 0;
 }
 #container > div:nth-child(1){
     grid-row: 5;
